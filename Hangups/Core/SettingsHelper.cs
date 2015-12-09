@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
 
-namespace Hangups.HangupsSystem
+namespace Hangups.Core
 {
     public static class SettingsHelper
     {

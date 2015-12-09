@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Notifications;
 
-namespace Hangups.HangupsSystem
+namespace Hangups.Core
 {
     class NotificationHelper
     {
@@ -82,6 +82,20 @@ namespace Hangups.HangupsSystem
                         }
                     }
                 }
+            });
+        }
+
+        public static void ErrorMessage(string message, string title)
+        {
+            Show(new ToastContent()
+            {
+                Visual = new ToastVisual()
+                {
+                    TitleText = new ToastText() { Text = title },
+                    BodyTextLine1 = new ToastText() { Text = message }
+                },
+
+                Scenario = ToastScenario.Default
             });
         }
     }

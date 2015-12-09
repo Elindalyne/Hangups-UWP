@@ -98,8 +98,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="HangupsSystem\NotificationHelper.cs" />
-    <Compile Include="HangupsSystem\SettingsHelper.cs" />
+    <Compile Include="Core\Auth.cs" />
+    <Compile Include="Core\NotificationHelper.cs" />
+    <Compile Include="Core\SettingsHelper.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
